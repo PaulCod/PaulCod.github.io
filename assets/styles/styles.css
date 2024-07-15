@@ -88,6 +88,10 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 
 
 #formacoes .formacoes-content .formacoes-list {
@@ -98,6 +102,29 @@ body {
   list-style: none;
 }
 
+
+
+#portifolio .content .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2rem;
+}
+
+
+#portifolio .content .grid .grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 2rem;
+  background-color: var(--quaternary-color);
+}
+
+#portifolio .content .grid .grid-item img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+}
 
 
 
@@ -150,6 +177,8 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
+
 
 
 .footer {
